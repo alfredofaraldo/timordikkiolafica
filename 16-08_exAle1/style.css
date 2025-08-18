@@ -1,0 +1,180 @@
+body {
+  background-image: linear-gradient(
+    180deg,
+    hsla(16, 100%, 76%, 1) 0%,
+    hsla(49, 100%, 81%, 1) 100%
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.regform {
+  width: 400px;
+  margin: 60px auto;
+  background: #ffffff48;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.regform h2 {
+  color: #333333a6;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.regform label {
+  display: block;
+  margin-bottom: 8px;
+  color: #33333376;
+}
+
+.regform input[type="text"],
+.regform input[type="email"],
+.regform input[type="tel"] {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 18px;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+}
+
+.regform input[type="text"]:focus,
+.regform input[type="email"]:focus,
+.regform input[type="tel"]:focus {
+  border: 2px solid rgba(51, 51, 51, 0.3); /* bordo semi-trasparente */
+  box-shadow: 0 0 5px rgba(51, 51, 51, 0.2); /* ombra leggera opzionale */
+}
+
+.regform .gender-group {
+  margin-bottom: 18px;
+}
+
+.regform .gender-group label {
+  margin-right: 20px;
+  font-weight: 400;
+}
+
+.regform input[type="radio"] {
+  margin-right: 6px;
+}
+
+.regform button {
+  width: 30%;
+  padding: 12px;
+  display: block;
+  margin: 0 auto;
+  background: linear-gradient(
+    90deg,
+    hsla(33, 100%, 53%, 0.4) 0%,
+    hsla(58, 100%, 68%, 0.4) 100%
+  );
+
+  border: none;
+  color: #33333376;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.regform button:hover {
+  background: linear-gradient(
+    90deg,
+    hsla(33, 100%, 53%, 1) 0%,
+    hsla(58, 100%, 68%, 1) 100%
+  );
+  color: #333333;
+}
+
+.data-table {
+  width: 50%;
+  margin: 20px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  border-collapse: collapse;
+  background: #ffffff48;
+  backdrop-filter: blur(5px);
+}
+
+.data-table th,
+.data-table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.data-table th {
+  background: rgba(255, 255, 255, 0.2);
+  color: #333333a6;
+  font-weight: 500;
+}
+
+.remove-btn {
+  background: rgba(255, 0, 0, 0.6);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.remove-btn:hover {
+  background: rgba(255, 0, 0, 0.8);
+}
+
+@media screen and (max-width: 480px) {
+  .data-table {
+    width: 80%;
+    font-size: 0.9rem;
+  }
+
+  .regform {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+  }
+
+  .regform h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .regform input[type="text"],
+  .regform input[type="email"],
+  .regform input[type="tel"] {
+    padding: 8px;
+    font-size: 0.9rem;
+    box-sizing: border-box;
+  }
+
+  .regform button {
+    min-width: fit-content;
+    width: 50%;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+  }
+
+  .regform .gender-group label {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .regform {
+    width: 80%;
+    margin: 10% auto;
+  }
+}
